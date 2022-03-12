@@ -3,12 +3,14 @@
 	padding: 0;
 }
 body {
+	overflow-x: hidden;
 	font-family: 'Poppins', sans-serif;
 	background-color: rgb(255, 122, 122);
 	color: rgb(255, 255, 255);
 	background-image: url('images/bg-intro-desktop.png');
 }
 .container {
+	overflow-x: hidden;
 	display: flex;
 	flex-direction: column;
 	width: 84%;
