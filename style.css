@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: rgb(255, 122, 122);
+	color: rgb(255, 255, 255);
+	background-image: url('images/bg-intro-desktop.png');
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 84%;
+	text-align: center;
+	margin: 5.3125rem auto;
+	justify-content: center;
+}
+.left {
+	margin-bottom: 4.8rem;
+}
+.left p {
+	font-size: 1.2rem;
+}
+.left h1 {
+	margin-bottom: 1.1rem;
+	font-size: 1.9rem;
+}
+input {
+	display: block;
+	width: 90%;
+	margin: 3% auto;
+	padding: 4%;		
+	border-radius: 7px;
+	outline: none;
+	border: 2px solid rgb(195, 195, 195);
+	margin-bottom: 5px;
+}
+input:focus {
+	border: 2px solid rgb(130, 130, 130);
+}
+#bluebox {
+	box-sizing: border-box;
+	background-color: hsl(248, 32%, 49%);
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 26px 95px;
+	box-shadow: 0 10px 2px rgb(212, 95, 95);
+	margin-bottom: 32px;
+	border-radius: 7px;
+}
+form {
+	background-color: rgb(255, 255, 255);
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 31px;
+	padding-bottom: 21px;
+    border-radius: 7px;
+    box-shadow: 0 10px 2px rgb(212, 95, 95);
+}
+button {
+	background-color: rgb(56, 204, 140);
+	margin-top: 10px;
+	padding: 24px;
+	border-style: none;
+	width: 98%;
+	color: rgb(255, 255, 255);
+	border-radius: 7px;
+	box-shadow: inset 0px -4px rgb(48, 176, 120);
+}
+#note > span {
+	color: red;
+}
+#note {
+	color: gray;
+	font-weight: 400;
+	font-size: 13px;
+}
+@media screen and (min-width: 900px) {
+	body {
+		margin: 100px;
+	}
+	.container {
+		display: grid;
+		grid-template-areas: "desc smallBox"
+		                     "desc form";	
+	}
+	.left {
+		grid-area: desc;
+		align-self: center;
+		margin-right: 40px;
+		text-align: left;
+	}
+	.right {
+		grid-area: form;
+	}
+	#bluebox {
+		grid-area: smallBox;
+	}
+}
+
+button:focus {
+	outline: none;
+	background-color: rgb(46, 163, 112);
+}
+.form-control small {
+	display: block;
+	color: rgb(255, 122, 122);
+	text-align: right;
+	font-size: 10px;
+}
+
+.form-control img {
+	position: absolute;
+	transform: translate(330px, -40px);
+	height: 20px;
+}
+.error {
+	display: block;
+}
